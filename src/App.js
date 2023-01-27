@@ -6,12 +6,14 @@ import Hero from "./components/pages/Hero";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Hero />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Hero />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
