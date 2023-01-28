@@ -7,7 +7,6 @@ const Hotels = () => {
   const [type, setType] = useState();
   const [view, setView] = useState();
   const handleValue = (e, name) => {
-    console.log(e, name);
     if (name === "type") {
       setType(e);
     } else {
@@ -19,7 +18,6 @@ const Hotels = () => {
     if (filtered.length !== 0) {
       setData(filtered);
     }
-    console.log(filtered);
   }, [type, view]);
 
   const component = [
