@@ -26,7 +26,7 @@ const Hotels = () => {
     {
       comp: (
         <RadioComponent
-          label={"Dublex"}
+          label={"Dublex Oda"}
           value="dublex"
           handleValue={handleValue}
           name="type"
@@ -36,7 +36,7 @@ const Hotels = () => {
     {
       comp: (
         <RadioComponent
-          label={"Suite"}
+          label={"Suite Oda"}
           value="suite"
           handleValue={handleValue}
           name="type"
@@ -46,7 +46,7 @@ const Hotels = () => {
     {
       comp: (
         <RadioComponent
-          label={"Standart"}
+          label={"Standart Oda"}
           value="standart"
           handleValue={handleValue}
           name="type"
@@ -56,7 +56,7 @@ const Hotels = () => {
     {
       comp: (
         <RadioComponent
-          label={"Deniz"}
+          label={"Deniz Manzara"}
           value="sea"
           handleValue={handleValue}
           name="view"
@@ -66,7 +66,7 @@ const Hotels = () => {
     {
       comp: (
         <RadioComponent
-          label={"Dağ"}
+          label={"Dağ Manzara"}
           value="mount"
           handleValue={handleValue}
           name="view"
@@ -76,7 +76,7 @@ const Hotels = () => {
     {
       comp: (
         <RadioComponent
-          label={"Kara"}
+          label={"Kara Manzara"}
           value="overland"
           handleValue={handleValue}
           name="view"
