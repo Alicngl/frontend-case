@@ -1,5 +1,6 @@
 import React from "react";
 import FormControl from "../components/pages/FormControl";
+import Hotels from "../components/pages/Hotels";
 import Slider from "../components/pages/Slider";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <div className="bg-indigo-500">
         <FormControl />
       </div>
+      <Hotels />
       <Slider />
     </div>
   );

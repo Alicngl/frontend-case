@@ -26,3 +26,76 @@ export const Locations = [
     title: "Marmaris",
   },
 ];
+
+export const DATA = [
+  {
+    img: "",
+    price: "",
+    name: "",
+    type: "",
+    view: "",
+  },
+  {
+    img: "",
+    price: "",
+    name: "",
+    type: "",
+    view: "",
+  },
+  {
+    img: "",
+    price: "",
+    name: "",
+    type: "",
+    view: "",
+  },
+  {
+    img: "",
+    price: "",
+    name: "",
+    type: "",
+    view: "",
+  },
+  {
+    img: "",
+    price: "",
+    name: "",
+    type: "",
+    view: "",
+  },
+  {
+    img: "",
+    price: "",
+    name: "",
+    type: "",
+    view: "",
+  },
+  {
+    img: "",
+    price: "",
+    name: "",
+    type: "",
+    view: "",
+  },
+  {
+    img: "",
+    price: "",
+    name: "",
+    type: "",
+    view: "",
+  },
+  {
+    img: "",
+    price: "",
+    name: "",
+    type: "",
+    view: "",
+  },
+  {
+    img: "",
+    price: "",
+    name: "",
+    type: "",
+    view: "",
+  },
+];
