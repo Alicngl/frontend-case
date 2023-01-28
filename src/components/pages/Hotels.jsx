@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { DATA } from "../../constants";
 import RadioComponent from "../shared/RadioComponent";
 
 const Hotels = () => {
+  const [data, setData] = useState(DATA);
   const [type, settype] = useState();
   const [view, setView] = useState();
   const handleValue = (e, name) => {
@@ -13,6 +14,14 @@ const Hotels = () => {
       setView(e);
     }
   };
+  useEffect(() => {
+    const filtered = DATA.filter((x) => x.type === type || x.view === view);
+    if (filtered.length != 0) {
+      setData(filtered);
+    }
+    console.log(filtered);
+  }, [type, view]);
+
   const component = [
     {
       comp: (
@@ -76,22 +85,21 @@ const Hotels = () => {
     },
   ];
 
-  console.log(type, ":type", view, ":view");
   return (
     <div className="w-full justify-center ">
-      <div className="grid grid-cols-3  justify-items-center  w-full">
+      <div className="grid grid-cols-3  justify-items-center  ">
         {component.map((x, index) => {
           return (
-            <div className="justify-center  ml-3" key={index}>
+            <div className="justify-items-start  " key={index}>
               {x.comp}
             </div>
           );
         })}
       </div>
-      <div className="grid grid-cols-4 justify-items-center">
-        {DATA.map((x, index) => {
+      <div className="grid grid-cols-4 justify-items-center p-5">
+        {data.map((x, index) => {
           return (
-            <div>
+            <div className="p-5" key={index}>
               <img
                 src={x.img}
                 alt=""
