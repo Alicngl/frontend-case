@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { DATA } from "../../constants";
 import RadioComponent from "../shared/RadioComponent";
 
 const Hotels = () => {
@@ -77,12 +78,34 @@ const Hotels = () => {
 
   console.log(type, ":type", view, ":view");
   return (
-    <div className="w-full justify-center flex">
-      <div className="grid grid-cols-3  items-center  max-w-7xl">
+    <div className="w-full justify-center ">
+      <div className="grid grid-cols-3  justify-items-center  w-full">
         {component.map((x, index) => {
           return (
-            <div className="justify-end w-full ml-3" key={index}>
+            <div className="justify-center  ml-3" key={index}>
               {x.comp}
+            </div>
+          );
+        })}
+      </div>
+      <div className="grid grid-cols-4 justify-items-center">
+        {DATA.map((x, index) => {
+          return (
+            <div>
+              <img
+                src={x.img}
+                alt=""
+                width={"250px"}
+                height="200px"
+                className=" max-h-[9rem] rounded-md"
+              />
+              <p>{x.name}</p>
+              <div className="flex justify-between">
+                <p>
+                  {x.type} - {x.view}
+                </p>
+                <p>{x.price} ₺</p>
+              </div>
             </div>
           );
         })}
