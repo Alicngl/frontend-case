@@ -4,19 +4,19 @@ import RadioComponent from "../shared/RadioComponent";
 
 const Hotels = () => {
   const [data, setData] = useState(DATA);
-  const [type, settype] = useState();
+  const [type, setType] = useState();
   const [view, setView] = useState();
   const handleValue = (e, name) => {
     console.log(e, name);
     if (name === "type") {
-      settype(e);
+      setType(e);
     } else {
       setView(e);
     }
   };
   useEffect(() => {
     const filtered = DATA.filter((x) => x.type === type || x.view === view);
-    if (filtered.length != 0) {
+    if (filtered.length !== 0) {
       setData(filtered);
     }
     console.log(filtered);
@@ -24,64 +24,34 @@ const Hotels = () => {
 
   const component = [
     {
-      comp: (
-        <RadioComponent
-          label={"Dublex Oda"}
-          value="dublex"
-          handleValue={handleValue}
-          name="type"
-        />
-      ),
+      label: "Dublex Oda",
+      value: "dublex",
+      name: "type",
     },
     {
-      comp: (
-        <RadioComponent
-          label={"Suite Oda"}
-          value="suite"
-          handleValue={handleValue}
-          name="type"
-        />
-      ),
+      label: "Suite Oda",
+      value: "suite",
+      name: "type",
     },
     {
-      comp: (
-        <RadioComponent
-          label={"Standart Oda"}
-          value="standart"
-          handleValue={handleValue}
-          name="type"
-        />
-      ),
+      label: "Standart Oda",
+      value: "standart",
+      name: "type",
     },
     {
-      comp: (
-        <RadioComponent
-          label={"Deniz Manzara"}
-          value="sea"
-          handleValue={handleValue}
-          name="view"
-        />
-      ),
+      label: "Deniz Manzara",
+      value: "sea",
+      name: "view",
     },
     {
-      comp: (
-        <RadioComponent
-          label={"Dağ Manzara"}
-          value="mount"
-          handleValue={handleValue}
-          name="view"
-        />
-      ),
+      label: "Dağ Manzara",
+      value: "mount",
+      name: "view",
     },
     {
-      comp: (
-        <RadioComponent
-          label={"Kara Manzara"}
-          value="overland"
-          handleValue={handleValue}
-          name="view"
-        />
-      ),
+      label: "Kara Manzara",
+      value: "overland",
+      name: "view",
     },
   ];
 
@@ -91,7 +61,12 @@ const Hotels = () => {
         {component.map((x, index) => {
           return (
             <div className="justify-items-start  " key={index}>
-              {x.comp}
+              <RadioComponent
+                label={x.label}
+                handleValue={handleValue}
+                name={x.name}
+                value={x.value}
+              />
             </div>
           );
         })}

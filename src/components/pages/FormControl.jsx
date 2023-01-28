@@ -16,10 +16,8 @@ const FormControl = () => {
   });
 
   const handleValue = (name, e) => {
-    // console.log(e, name, "asdasd");
     setData({ ...data, [name]: e });
   };
-  console.log(data, "DATA");
 
   return (
     <div className="flex space-x-2 items-center w-full justify-center  p-3">
@@ -44,7 +42,9 @@ const FormControl = () => {
             </div>
           </PopoverContent>
         </Popover>
-        <button className="bg-yellow-700 rounded-sm text-white px-4 py-2">ARA</button>
+        <button className="bg-yellow-700 rounded-sm text-white px-4 py-2">
+          ARA
+        </button>
       </div>
     </div>
   );
