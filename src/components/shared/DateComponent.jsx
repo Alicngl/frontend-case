@@ -12,7 +12,7 @@ const DateComponent = ({ handleValue, name }) => {
         type="date"
         className="border-solid border-2 rounded-md p-1"
         onChange={(e) => {
-          setDate({ ...date, ["value"]: e.target.value });
+          setDate({ ...date, value: e.target.value });
         }}
       />
     </div>

@@ -1,108 +1,108 @@
-import istanbul from "../assets/istanbul.jpg";
-import izmir from "../assets/izmir.jpeg";
-import cesme from "../assets/izmir-cesme.jpg";
-import marmaris from "../assets/mugla-marmaris.jpg";
-import ada from "../assets/aydin-kusadasi.jpg";
-import otel1 from "../assets/otel1.jpeg";
-import otel2 from "../assets/otel2.jpeg";
-import otel3 from "../assets/otel3.jpeg";
-import otel4 from "../assets/otel4.jpeg";
-import otel5 from "../assets/otel5.jpeg";
-import otel6 from "../assets/otel6.jpeg";
-import otel7 from "../assets/otel7.webp";
-import otel8 from "../assets/otel8.jpeg";
-import otel9 from "../assets/otel9.jpeg";
-import otel10 from "../assets/otel10.webp";
+import Istanbul from "../assets/istanbul.jpg";
+import Izmir from "../assets/izmir.jpeg";
+import Cesme from "../assets/izmir-cesme.jpg";
+import Marmaris from "../assets/mugla-marmaris.jpg";
+import Ada from "../assets/aydin-kusadasi.jpg";
+import Otel1 from "../assets/otel1.jpeg";
+import Otel2 from "../assets/otel2.jpeg";
+import Otel3 from "../assets/otel3.jpeg";
+import Otel4 from "../assets/otel4.jpeg";
+import Otel5 from "../assets/otel5.jpeg";
+import Otel6 from "../assets/otel6.jpeg";
+import Otel7 from "../assets/otel7.webp";
+import Otel8 from "../assets/otel8.jpeg";
+import Otel9 from "../assets/otel9.jpeg";
+import Otel10 from "../assets/otel10.webp";
 
 export const Locations = [
   {
-    img: istanbul,
+    img: Istanbul,
     title: "Istanbul",
   },
   {
-    img: izmir,
+    img: Izmir,
     title: "İzmir",
   },
   {
-    img: cesme,
+    img: Cesme,
     title: "İzmir-Çeşme",
   },
   {
-    img: marmaris,
+    img: Marmaris,
     title: "Kuşadası",
   },
   {
-    img: ada,
+    img: Ada,
     title: "Marmaris",
   },
 ];
 
 export const DATA = [
   {
-    img: otel1,
+    img: Otel1,
     price: "1000",
     name: "Test1",
     type: "standart",
     view: "overland",
   },
   {
-    img: otel2,
+    img: Otel2,
     price: "3000",
     name: "Test2",
     type: "suite",
     view: "sea",
   },
   {
-    img: otel3,
+    img: Otel3,
     price: "2500",
     name: "Test3",
     type: "Dublex",
     view: "mount",
   },
   {
-    img: otel4,
+    img: Otel4,
     price: "1500",
     name: "Test4",
     type: "standart",
     view: "overland",
   },
   {
-    img: otel5,
+    img: Otel5,
     price: "4500",
     name: "Test5",
     type: "dublex",
     view: "sea",
   },
   {
-    img: otel6,
+    img: Otel6,
     price: "3500",
     name: "test6",
     type: "standart",
     view: "sea",
   },
   {
-    img: otel7,
+    img: Otel7,
     price: "2700",
     name: "Test7",
     type: "dublex",
     view: "overland",
   },
   {
-    img: otel8,
+    img: Otel8,
     price: "3200",
     name: "Test8",
     type: "suite",
     view: "mount",
   },
   {
-    img: otel9,
+    img: Otel9,
     price: "1700",
     name: "Test9",
     type: "standart",
     view: "mount",
   },
   {
-    img: otel10,
+    img: Otel10,
     price: "2900",
     name: "Test10",
     type: "suite",
