@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import HotelDetail from "../components/pages/HotelDetail";
+import { DATA } from "../constants";
 
 const Details = () => {
-  return (
-    <div>Details</div>
-  )
-}
+  const { id } = useParams();
 
-export default Details
+  return (
+    <div className="bg-gray-200 h-screen">
+      <HotelDetail id={id} />
+    </div>
+  );
+};
+
+export default Details;

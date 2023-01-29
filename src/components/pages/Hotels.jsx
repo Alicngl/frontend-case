@@ -73,7 +73,10 @@ const Hotels = () => {
       <div className="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 justify-items-center space-y-3 p-5">
         {data.map((x, index) => {
           return (
-            <div className="p-5 space-y-2 shadow-md" key={index}>
+            <div
+              onClick={() => (window.location = `details/${x.id}`)}
+              className="p-5 space-y-2 shadow-md cursor-pointer hover:shadow-2xl"
+              key={index}>
               <img
                 src={x.img}
                 alt="otels"

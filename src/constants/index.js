@@ -41,7 +41,7 @@ export const DATA = [
   {
     img: Otel1,
     price: "1000",
-    name: "Test1",
+    name: "Test1 Otel",
     type: "standart",
     view: "overland",
     location: "Antalya",
@@ -50,7 +50,7 @@ export const DATA = [
   {
     img: Otel2,
     price: "3000",
-    name: "Test2",
+    name: "Test2 Otel",
     type: "suite",
     view: "sea",
     location: "Çeşme",
@@ -59,7 +59,7 @@ export const DATA = [
   {
     img: Otel3,
     price: "2500",
-    name: "Test3",
+    name: "Test3 Otel",
     type: "Dublex",
     view: "mount",
     location: "Alanya",
@@ -68,7 +68,7 @@ export const DATA = [
   {
     img: Otel4,
     price: "1500",
-    name: "Test4",
+    name: "Test4 Otel",
     type: "standart",
     view: "overland",
     location: "Mersin",
@@ -77,7 +77,7 @@ export const DATA = [
   {
     img: Otel5,
     price: "4500",
-    name: "Test5",
+    name: "Test5 Otel",
     type: "dublex",
     view: "sea",
     location: "Muğla",
@@ -86,7 +86,7 @@ export const DATA = [
   {
     img: Otel6,
     price: "3500",
-    name: "test6",
+    name: "Test6 Otel",
     type: "standart",
     view: "sea",
     location: "Bodrum",
@@ -95,7 +95,7 @@ export const DATA = [
   {
     img: Otel7,
     price: "2700",
-    name: "Test7",
+    name: "Test7 Otel",
     type: "dublex",
     view: "overland",
     location: "İstanbul",
@@ -104,7 +104,7 @@ export const DATA = [
   {
     img: Otel8,
     price: "3200",
-    name: "Test8",
+    name: "Test8 Otel",
     type: "suite",
     view: "mount",
     location: "Kuşadası",
@@ -113,7 +113,7 @@ export const DATA = [
   {
     img: Otel9,
     price: "1700",
-    name: "Test9",
+    name: "Test9 Otel",
     type: "standart",
     view: "mount",
     location: "Marmaris",
@@ -122,7 +122,7 @@ export const DATA = [
   {
     img: Otel10,
     price: "2900",
-    name: "Test10",
+    name: "Test10 Otel",
     type: "suite",
     view: "overland",
     location: "İzmir",
