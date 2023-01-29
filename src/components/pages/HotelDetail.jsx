@@ -36,7 +36,7 @@ const HotelDetail = ({ id }) => {
                     <h2>{x.location}</h2>
                   </div>
                 </div>
-                <div className="block sm:flex space-y-5 sm:space-y-0 space-x-5 ">
+                <div className="block sm:flex space-y-5 sm:space-y-0 space-x-0 sm:space-x-5 ">
                   <div className="px-2">
                     <Carousel
                       data={image}
@@ -57,33 +57,32 @@ const HotelDetail = ({ id }) => {
                     />
                   </div>
                   <div className="flex justify-center">
-                  <div className="space-y-5 max-w-xs sm:max-w-full justify-center">
-                    <div className="shadow-md p-5 bg-white rounded-md">
-                      <p>%27'ye varan erken rezervasyon inirimleri</p>
-                    </div>
-                    <div className="flex shadow-md p-3 bg-white rounded-md items-center space-x-4">
-                      <div>
-                        <p className="text-3xl bg-green-500	text-white p-2 rounded-lg">
-                          7.3
+                    <div className="space-y-5 max-w-xs sm:max-w-full justify-center">
+                      <div className="shadow-md p-5 bg-white rounded-md">
+                        <p>%27'ye varan erken rezervasyon inirimleri</p>
+                      </div>
+                      <div className="flex shadow-md p-3 bg-white rounded-md items-center space-x-4">
+                        <div>
+                          <p className="text-3xl bg-green-500	text-white p-2 rounded-lg">
+                            7.3
+                          </p>
+                        </div>
+                        <div>
+                          <p className="text-xl">İyi</p>
+                          <p className="font-bold text-green-200">
+                            %60 tavsiye ediliyor
+                          </p>
+                        </div>
+                      </div>
+                      <div className="shadow-md p-5 bg-white rounded-md flex">
+                        <MdLocationOn size={35} />
+                        <p>
+                          ULAŞIM Antalya Gazipaşa - Alanya <br /> Havalimanı
+                          67.84 km,
                         </p>
                       </div>
-                      <div>
-                        <p className="text-xl">İyi</p>
-                        <p className="font-bold text-green-200">
-                          %60 tavsiye ediliyor
-                        </p>
-                      </div>
-                    </div>
-                    <div className="shadow-md p-5 bg-white rounded-md flex">
-                      <MdLocationOn size={35} />
-                      <p>
-                        ULAŞIM Antalya Gazipaşa - Alanya <br /> Havalimanı 67.84
-                        km,
-                      </p>
                     </div>
                   </div>
-                  </div>
-                 
                 </div>
               </div>
             );
