@@ -15,7 +15,8 @@ import Otel9 from "../assets/otel9.jpeg";
 import Otel10 from "../assets/otel10.webp";
 import Room1 from "../assets/oda-1.jpeg";
 import Room2 from "../assets/oda-2.jpeg";
-import Room3 from "../assets/oda-3.jpeg";
+import Room3 from "../assets/oda-4.jpeg";
+import Room4 from "../assets/oda-6.jpeg";
 
 export const Locations = [
   {
@@ -144,4 +145,75 @@ export const image = [
   {
     image: Room3,
   },
+  {
+    image: Room4,
+  },
+];
+
+export const tabs = [
+  {
+    label: "Tesis Bilgileri",
+    value: "information",
+    desc: `OTEL OLANAKLARI
+
+    Hamam
+    Sauna
+    Buhar Odası
+    Resepsiyon Hizmeti
+    Cafe & Bar
+    Bahçe
+    Havlu
+    Sinema Salonu (Mini)
+    Kablosuz İnternet (Odalarda ve genel alanlarda)
+    Mama Sandalyesi
+    Lobi
+    Emanet Kasası
+    Masa Tenisi ((Top ve raketler))
+    Lobi Bar
+    Masaj Ücretli
+    Alışveriş Merkezi Ücretli (Market, kuyumcu, kuaför, gümüşçü, çantacı, butikçi, foto, derici, hediyelik eşya, gözlükçü)
+    Deri Dükkanı Ücretli
+    Toplantı Salonu Ücretli
+    Hediyelik Eşya Mağazası Ücretli
+    Oyun Salonu Ücretli
+    Çamaşırhane Ücretli
+    Hemşire Ücretli (09.00-18.00)
+    Nargile Ücretli
+    Doktor Ücretli (09.00-18.00)
+    Butik Ücretli
+    Fotoğraf Servisi Ücretli
+    Telefon ve Faks Hizmeti Ücretli
+    Market Ücretli
+    Kuru Temizleme Ücretli
+    Kuaför Ücretli
+    Kuyumcu Ücretli
+    Araç Kiralama Ücretli
+    Oda Servisi Ücretli`,
+  },
+  {
+    label: "Çevre Ve Konum",
+    value: "environment",
+    desc: `TARİHİ YERLER :
+    Aspendos 11.62 km.
+    Silyon 21.86 km.
+    Side Antik Kenti 23.64 km.
+    Özel Yörük Müzesi 19.18 km.
+    Side Müze Müdürlüğü 23.6 km.
+    Tarihi Aspendos Köprüsü 8.73 km.
+    Aspendos Su Kemerleri 11.61 km.
+    Aspendos Antik Kenti 11.63 km.
+    Apollon Ve Athena Tapınağı 23.43 km.
+    Men Tapınağı 23.53 km.
+    Antik Tiyatro 23.59 km.
+    Side Apollon Tapınağı 23.61 km.
+`,
+  },
+
+  // {
+  //   label: "Yorumlar",
+  //   value: "vue",
+  //   desc: `We're not always in the position that we want to be at.
+  //   We're constantly growing. We're constantly making mistakes. We're
+  //   constantly trying to express ourselves and actualize our dreams.`,
+  // },
 ];
