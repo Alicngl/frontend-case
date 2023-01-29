@@ -6,7 +6,7 @@ import Pay from "../../assets/odeme.webp";
 const Footer = () => {
   return (
     <div className="w-ful border-t-4 border-solid p-7">
-      <div className="sm:flex justify-around space-y-5">
+      <div className="sm:flex justify-around space-y-5 sm:space-y-0">
         <div className="space-y-2 sm:border-b-0 border-b-2 border-solid p-3">
           <p>Hakkımızda</p>
           <ul className="text-sm">
@@ -18,7 +18,7 @@ const Footer = () => {
 
         <div className="space-y-3 sm:border-b-0 border-b-2 border-solid p-3">
           <div className="flex  space-x-3">
-            <p className="">Bizi Sosyal Medyada Takip Edin :</p>
+            <p className="">Sosyal Medyadan Takip Edin :</p>
 
             <div className="flex  space-x-2">
               <a href="https://www.facebook.com/" target={"_blank"}>
