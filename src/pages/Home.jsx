@@ -10,8 +10,8 @@ const Home = () => {
       <div className="bg-indigo-500">
         <FormControl />
       </div>
-      {/* <Hotels />
-      <Slider />
+      <Hotels />
+      {/* <Slider />
       <Footer /> */}
     </div>
   );

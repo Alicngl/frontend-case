@@ -44,6 +44,7 @@ export const DATA = [
     name: "Test1",
     type: "standart",
     view: "overland",
+    location: "Antalya",
   },
   {
     img: Otel2,
@@ -51,6 +52,7 @@ export const DATA = [
     name: "Test2",
     type: "suite",
     view: "sea",
+    location: "Çeşme",
   },
   {
     img: Otel3,
@@ -58,6 +60,7 @@ export const DATA = [
     name: "Test3",
     type: "Dublex",
     view: "mount",
+    location: "Alanya",
   },
   {
     img: Otel4,
@@ -65,6 +68,7 @@ export const DATA = [
     name: "Test4",
     type: "standart",
     view: "overland",
+    location: "Mersin",
   },
   {
     img: Otel5,
@@ -72,6 +76,7 @@ export const DATA = [
     name: "Test5",
     type: "dublex",
     view: "sea",
+    location: "Muğla",
   },
   {
     img: Otel6,
@@ -79,6 +84,7 @@ export const DATA = [
     name: "test6",
     type: "standart",
     view: "sea",
+    location: "Bodrum",
   },
   {
     img: Otel7,
@@ -86,6 +92,7 @@ export const DATA = [
     name: "Test7",
     type: "dublex",
     view: "overland",
+    location: "İstanbul",
   },
   {
     img: Otel8,
@@ -93,6 +100,7 @@ export const DATA = [
     name: "Test8",
     type: "suite",
     view: "mount",
+    location: "Kuşadası",
   },
   {
     img: Otel9,
@@ -100,6 +108,7 @@ export const DATA = [
     name: "Test9",
     type: "standart",
     view: "mount",
+    location: "Marmaris",
   },
   {
     img: Otel10,
@@ -107,5 +116,6 @@ export const DATA = [
     name: "Test10",
     type: "suite",
     view: "overland",
+    location: "İzmir",
   },
 ];

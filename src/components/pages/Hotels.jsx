@@ -1,3 +1,4 @@
+import { Button } from "@material-tailwind/react";
 import React, { useEffect, useState } from "react";
 import { DATA } from "../../constants";
 import RadioComponent from "../shared/RadioComponent";
@@ -69,10 +70,10 @@ const Hotels = () => {
           );
         })}
       </div>
-      <div className="grid grid-cols-4 justify-items-center p-5">
+      <div className="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 justify-items-center space-y-3 p-5">
         {data.map((x, index) => {
           return (
-            <div className="p-5" key={index}>
+            <div className="p-5 space-y-2 shadow-md" key={index}>
               <img
                 src={x.img}
                 alt="otels"
@@ -80,12 +81,16 @@ const Hotels = () => {
                 height="200px"
                 className=" max-h-[9rem] rounded-md"
               />
-              <p>{x.name}</p>
+              <p className="text-xl">{x.name}</p>
+              <p>{x.location}</p>
               <div className="flex justify-between">
                 <p>
                   {x.type} - {x.view}
                 </p>
                 <p>{x.price} ₺</p>
+              </div>
+              <div className="w-full">
+                <Button className="w-full">Rezervasyon Yap</Button>
               </div>
             </div>
           );
