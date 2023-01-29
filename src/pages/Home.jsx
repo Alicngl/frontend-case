@@ -11,8 +11,8 @@ const Home = () => {
         <FormControl />
       </div>
       <Hotels />
-      {/* <Slider />
-      <Footer /> */}
+      <Slider />
+      {/* <Footer /> */}
     </div>
   );
 };

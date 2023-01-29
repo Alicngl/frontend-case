@@ -5,6 +5,7 @@ import {
   MenuList,
   MenuItem,
   IconButton,
+  Button,
 } from "@material-tailwind/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -29,9 +30,7 @@ const Hero = () => {
       <div className="flex items-center space-x-3 hidden md:flex">
         <p>Yardım</p>
         <p>Acenteler</p>
-        <button className="border-2 p-2 border-solid rounded-md">
-          Giriş Yap
-        </button>
+        <Button>Giriş Yap</Button>
       </div>
       <div className="md:hidden items-center ">
         <Menu
