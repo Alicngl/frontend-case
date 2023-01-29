@@ -22,15 +22,15 @@ const FormControl = () => {
 
   return (
     <div className="flex space-x-2 items-center justify-center  p-3 ">
-      <div className="block md:flex items-center  p-4  w-full justify-around max-w-6xl md:space-y-0 space-y-3">
-        <div className="border-2 border-solid rounded-md pt-3 px-2">
+      <div className="block md:flex items-center  p-4  w-full justify-around max-w-5xl md:space-y-0 space-y-3 ">
+        <div className="border- rounded-md pt-3 px-2 shadow-md	bg-white">
           <InputComponent />
         </div>
-        <div className="block md:flex border-solid border-2  pt-3 px-2 rounded-md md:space-y-0 space-y-3">
+        <div className="block md:flex border-solid border-1  pt-3 px-2 rounded-md md:space-y-0 space-y-3 shadow-md	bg-white">
           <DateComponent handleValue={handleValue} name="entry" label="Giriş" />
           <DateComponent handleValue={handleValue} name="exit" label="Çıkış" />
         </div>
-        <div className="border-2 border-solid rounded-md py-3 ">
+        <div className="border-1 shadow-md border-solid rounded-md py-3 bg-white">
           <Popover placement="bottom">
             <PopoverHandler className="cursor-pointer flex space-x-4  pt-2 pb-1 px-3 border-gray-300 rounded-md">
               <div className="flex space-x-4">

@@ -6,9 +6,10 @@ import Slider from "../components/pages/Slider";
 
 const Home = () => {
   return (
-    <div className="space-y-4 ">
-      <FormControl />
-
+    <div className="space-y-4">
+      <div className="bg-indigo-500">
+        <FormControl />
+      </div>
       {/* <Hotels />
       <Slider />
       <Footer /> */}
