@@ -13,6 +13,9 @@ import Otel7 from "../assets/otel7.webp";
 import Otel8 from "../assets/otel8.jpeg";
 import Otel9 from "../assets/otel9.jpeg";
 import Otel10 from "../assets/otel10.webp";
+import Room1 from "../assets/oda-1.jpeg";
+import Room2 from "../assets/oda-2.jpeg";
+import Room3 from "../assets/oda-3.jpeg";
 
 export const Locations = [
   {
@@ -127,5 +130,18 @@ export const DATA = [
     view: "overland",
     location: "İzmir",
     id: 10,
+  },
+];
+
+export const image = [
+  {
+    image: Room1,
+  },
+
+  {
+    image: Room2,
+  },
+  {
+    image: Room3,
   },
 ];
