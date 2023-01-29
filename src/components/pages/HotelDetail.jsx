@@ -4,6 +4,7 @@ import { MdLocationOn } from "react-icons/md";
 import { Carousel } from "react-carousel-minimal";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import TabsComponent from "./TabsComponent";
+import Rooms from "./Rooms";
 
 const HotelDetail = ({ id }) => {
   const [detailItem, setDetailItem] = useState();
@@ -26,19 +27,19 @@ const HotelDetail = ({ id }) => {
   return (
     <div className="flex justify-center">
       <div>
-        <div className="flex justify-center pt-5">
+        <div className=" justify-center pt-5 ">
           {detailItem &&
             detailItem.map((x, index) => {
               return (
-                <div key={index}>
-                  <div>
+                <div key={index} className="space-y-3 sm:space-y-0">
+                  <div className="px-2 ">
                     <h1 className="text-3xl">{x.name}</h1>
                     <div className="flex items-center">
                       <MdLocationOn size={20} />
                       <h2>{x.location}</h2>
                     </div>
                   </div>
-                  <div className="block sm:flex space-y-5 sm:space-y-0 space-x-0 sm:space-x-5 ">
+                  <div className="block md:flex space-y-5 md:space-y-0 space-x-0 md:space-x-5 ">
                     <div className="px-2">
                       <Carousel
                         data={image}
@@ -58,8 +59,8 @@ const HotelDetail = ({ id }) => {
                         slideImageFit="cover"
                       />
                     </div>
-                    <div className="flex justify-center">
-                      <div className="space-y-5 max-w-xs sm:max-w-full justify-center">
+                    <div className="px-2">
+                      <div className="space-y-5  ">
                         <div className="shadow-md p-5 bg-white rounded-md">
                           <p>%27'ye varan erken rezervasyon inirimleri</p>
                         </div>
@@ -90,7 +91,10 @@ const HotelDetail = ({ id }) => {
               );
             })}
         </div>
-        <div className="max-w-5xl flex justify-center w-full bg-white rounded-md mt-5 p-4 px-2">
+        <div className="max w-full   rounded-md mt-5 p-4 px-2">
+          <Rooms />
+        </div>
+        <div className="max-w-6xl flex justify-center w-full bg-white rounded-md mt-5 p-4 px-2">
           <TabsComponent />
         </div>
       </div>

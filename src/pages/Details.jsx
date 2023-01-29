@@ -7,7 +7,7 @@ const Details = () => {
   const { id } = useParams();
 
   return (
-    <div className="bg-gray-200 h-screen">
+    <div className="bg-gray-200 h-full">
       <HotelDetail id={id} />
     </div>
   );

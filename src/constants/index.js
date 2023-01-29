@@ -208,12 +208,19 @@ export const tabs = [
     Side Apollon Tapınağı 23.61 km.
 `,
   },
+];
 
-  // {
-  //   label: "Yorumlar",
-  //   value: "vue",
-  //   desc: `We're not always in the position that we want to be at.
-  //   We're constantly growing. We're constantly making mistakes. We're
-  //   constantly trying to express ourselves and actualize our dreams.`,
-  // },
+export const rooms = [
+  {
+    name: "Perla Suite",
+    img: Room1,
+  },
+  {
+    name: "Granada Villa",
+    img: Room2,
+  },
+  {
+    name: "King Suite",
+    img: Room3,
+  },
 ];
