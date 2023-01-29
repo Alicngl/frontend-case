@@ -1,26 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-const InputComponent = ({ handleValue, name }) => {
-  const [number, setNumber] = useState(0);
-  useEffect(() => {
-    handleValue(name, number);
-  }, [number]);
+import React from "react";
+import { Input } from "@material-tailwind/react";
 
+const InputComponent = () => {
   return (
-    <div className="flex space-x-4 border-2 border-solid p-3 justify-center">
-      <button
-        onClick={() => {
-          number > 0 && setNumber(number - 1);
-        }}>
-        <AiOutlineMinus fontSize={"20px"} />
-      </button>
-      <p className="text-xl">{number}</p>
-      <button
-        onClick={() => {
-          number < 8 && setNumber(number + 1);
-        }}>
-        <AiOutlinePlus fontSize={"20px"} />
-      </button>
+    <div>
+      <Input variant="static" size="lg" label="Nereye Gitmek İstersin" />
     </div>
   );
 };

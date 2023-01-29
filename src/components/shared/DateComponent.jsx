@@ -1,6 +1,7 @@
+import { Input } from "@material-tailwind/react";
 import React, { useEffect, useState } from "react";
 
-const DateComponent = ({ handleValue, name }) => {
+const DateComponent = ({ handleValue, name, label }) => {
   const [date, setDate] = useState({ name: name, value: "" });
   useEffect(() => {
     handleValue(date.name, date.value);
@@ -8,9 +9,11 @@ const DateComponent = ({ handleValue, name }) => {
 
   return (
     <div className="border-solid ">
-      <input
+      <Input
+        variant="static"
+        size="lg"
+        label={label}
         type="date"
-        className="border-solid border-2 rounded-md p-1"
         onChange={(e) => {
           setDate({ ...date, value: e.target.value });
         }}

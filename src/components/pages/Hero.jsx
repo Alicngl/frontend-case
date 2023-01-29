@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const Links = ["Oda Türleri", "Galeri", "İletişim"];
+const Links = ["Odalar", "Galeri", "İletişim"];
 const Hero = () => {
   return (
     <div className=" w-full justify-between flex   p-5 border-b-2 border-solid">

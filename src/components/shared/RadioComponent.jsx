@@ -12,7 +12,6 @@ const RadioComponent = ({ label, value, handleValue, name }) => {
   return (
     <div>
       <Radio
-        color="#fff"
         id="html"
         name={name}
         value={value}
