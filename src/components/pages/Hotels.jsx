@@ -75,7 +75,7 @@ const Hotels = () => {
             <div className="p-5" key={index}>
               <img
                 src={x.img}
-                alt=""
+                alt="otels"
                 width={"250px"}
                 height="200px"
                 className=" max-h-[9rem] rounded-md"
