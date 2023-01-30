@@ -22,11 +22,11 @@ const FormControl = () => {
 
   return (
     <div className="flex space-x-2 items-center justify-center  p-3 ">
-      <div className="block md:flex items-center  p-4  w-full justify-around max-w-5xl md:space-y-0 space-y-3 ">
+      <div className="block lg:flex items-center  p-4  w-full justify-around max-w-5xl lg:space-y-0 space-y-3 ">
         <div className="border- rounded-md pt-3 px-2 shadow-md	bg-white">
           <InputComponent />
         </div>
-        <div className="block md:flex border-solid border-1  pt-3 px-2 rounded-md md:space-y-0 space-y-3 shadow-md	bg-white">
+        <div className="block lg:flex border-solid border-1  pt-3 px-2 rounded-md lg:space-y-0 space-y-3 shadow-md	bg-white">
           <DateComponent handleValue={handleValue} name="entry" label="Giriş" />
           <DateComponent handleValue={handleValue} name="exit" label="Çıkış" />
         </div>

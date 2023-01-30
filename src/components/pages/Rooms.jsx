@@ -46,7 +46,7 @@ const Rooms = () => {
             <div
               key={index}
               className="sm:flex justify-between bg-white items-center rounded-md p-5 space-x-5">
-              <div className="sm:flex space-x-5">
+              <div className="sm:flex space-x-5 space-y-2 md:space-y-0">
                 <div className="flex justify-center">
                   <img
                     src={x.img}
@@ -114,7 +114,7 @@ const Rooms = () => {
               </div>
 
               <div className="items-center flex">
-                <div className="space-y-3">
+                <div className="md:space-y-3 space-y-0 space-x-2 md:space-x-0 flex lg:block">
                   <div>
                     <Button variant="outlined" fullWidth>
                       Sizi Arayalım
