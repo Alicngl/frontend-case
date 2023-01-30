@@ -114,7 +114,7 @@ const Rooms = () => {
               </div>
 
               <div className="items-center flex">
-                <div className="md:space-y-3 space-y-0 space-x-2 md:space-x-0 flex lg:block">
+                <div className="md:space-y-3 space-y-0 space-x-2 md:space-x-0 flex md:block">
                   <div>
                     <Button variant="outlined" fullWidth>
                       Sizi Arayalım

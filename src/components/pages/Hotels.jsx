@@ -24,31 +24,35 @@ const Hotels = () => {
   return (
     <div className="w-full justify-center mt-5">
       <div className="  justify-items-center  ">
-        <div className="grid sm:grid-cols-3 grid-cols-2">
-          {componentRoom.map((x, index) => {
-            return (
-              <div className="justify-items-start " key={index}>
-                <RadioComponent
-                  label={x.label}
-                  handleValue={handleValue}
-                  name={x.name}
-                  value={x.value}
-                />
-              </div>
-            );
-          })}
-          {componentView.map((x, index) => {
-            return (
-              <div className="justify-items-start  " key={index}>
-                <RadioComponent
-                  label={x.label}
-                  handleValue={handleValue}
-                  name={x.name}
-                  value={x.value}
-                />
-              </div>
-            );
-          })}
+        <div className="grid  grid-cols-2  sm:justify-items-left justify-items-center">
+          <div>
+            {componentRoom.map((x, index) => {
+              return (
+                <div className="justify-items-start " key={index}>
+                  <RadioComponent
+                    label={x.label}
+                    handleValue={handleValue}
+                    name={x.name}
+                    value={x.value}
+                  />
+                </div>
+              );
+            })}
+          </div>
+          <div>
+            {componentView.map((x, index) => {
+              return (
+                <div className="justify-items-start  " key={index}>
+                  <RadioComponent
+                    label={x.label}
+                    handleValue={handleValue}
+                    name={x.name}
+                    value={x.value}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
       <div className="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 justify-items-center space-y-3 p-5">
