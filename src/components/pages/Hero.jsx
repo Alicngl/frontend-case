@@ -7,7 +7,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
-export default function Example() {
+export default function Hero() {
   const [openNav, setOpenNav] = useState(false);
 
   useEffect(() => {
@@ -24,8 +24,17 @@ export default function Example() {
         variant="small"
         color="blue-gray"
         className="p-1 font-normal">
-        <a href="#" className="flex items-center">
-          Odalar
+        <a href="/" className="flex items-center">
+          Anasayfa
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal">
+        <a href="/list" className="flex items-center">
+          Otel Listele
         </a>
       </Typography>
       <Typography
@@ -50,14 +59,16 @@ export default function Example() {
   );
 
   return (
-    <div className="mx-auto  py-2 px-4 lg:px-8 lg:py-4">
+    <div className="mx-auto  py-2 px-4 lg:px-8 lg:py-4 w-full shadow-md">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900 w-full">
         <Typography
           as="a"
           href="#"
           variant="small"
           className="mr-4 cursor-pointer py-1.5 font-normal">
-          <span>OtelFiyat</span>
+          <a href="/">
+            <span className="text-xl">OtelFiyat</span>
+          </a>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <Button variant="gradient" size="sm" className="hidden lg:inline-block">

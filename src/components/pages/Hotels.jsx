@@ -1,6 +1,6 @@
 import { Button } from "@material-tailwind/react";
 import React, { useEffect, useState } from "react";
-import { DATA } from "../../constants";
+import { componentRoom, componentView, DATA } from "../../constants";
 import RadioComponent from "../shared/RadioComponent";
 
 const Hotels = () => {
@@ -21,54 +21,35 @@ const Hotels = () => {
     }
   }, [type, view]);
 
-  const component = [
-    {
-      label: "Dublex Oda",
-      value: "dublex",
-      name: "type",
-    },
-    {
-      label: "Suite Oda",
-      value: "suite",
-      name: "type",
-    },
-    {
-      label: "Standart Oda",
-      value: "standart",
-      name: "type",
-    },
-    {
-      label: "Deniz Manzara",
-      value: "sea",
-      name: "view",
-    },
-    {
-      label: "Dağ Manzara",
-      value: "mount",
-      name: "view",
-    },
-    {
-      label: "Kara Manzara",
-      value: "overland",
-      name: "view",
-    },
-  ];
-
   return (
-    <div className="w-full justify-center ">
-      <div className="grid grid-cols-3  justify-items-center  ">
-        {component.map((x, index) => {
-          return (
-            <div className="justify-items-start  " key={index}>
-              <RadioComponent
-                label={x.label}
-                handleValue={handleValue}
-                name={x.name}
-                value={x.value}
-              />
-            </div>
-          );
-        })}
+    <div className="w-full justify-center mt-5">
+      <div className="  justify-items-center  ">
+        <div className="grid sm:grid-cols-3 grid-cols-2">
+          {componentRoom.map((x, index) => {
+            return (
+              <div className="justify-items-start " key={index}>
+                <RadioComponent
+                  label={x.label}
+                  handleValue={handleValue}
+                  name={x.name}
+                  value={x.value}
+                />
+              </div>
+            );
+          })}
+          {componentView.map((x, index) => {
+            return (
+              <div className="justify-items-start  " key={index}>
+                <RadioComponent
+                  label={x.label}
+                  handleValue={handleValue}
+                  name={x.name}
+                  value={x.value}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
       <div className="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 justify-items-center space-y-3 p-5">
         {data.map((x, index) => {

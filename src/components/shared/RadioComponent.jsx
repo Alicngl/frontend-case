@@ -12,6 +12,7 @@ const RadioComponent = ({ label, value, handleValue, name }) => {
   return (
     <div>
       <Radio
+        className="text-sm"
         id="html"
         name={name}
         value={value}

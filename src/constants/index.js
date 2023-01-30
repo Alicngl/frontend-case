@@ -224,3 +224,38 @@ export const rooms = [
     img: Room3,
   },
 ];
+
+export const componentRoom = [
+  {
+    label: "Dublex Oda",
+    value: "dublex",
+    name: "type",
+  },
+  {
+    label: "Suite Oda",
+    value: "suite",
+    name: "type",
+  },
+  {
+    label: "Standart Oda",
+    value: "standart",
+    name: "type",
+  },
+];
+export const componentView = [
+  {
+    label: "Deniz Manzara",
+    value: "sea",
+    name: "view",
+  },
+  {
+    label: "Dağ Manzara",
+    value: "mount",
+    name: "view",
+  },
+  {
+    label: "Kara Manzara",
+    value: "overland",
+    name: "view",
+  },
+];
